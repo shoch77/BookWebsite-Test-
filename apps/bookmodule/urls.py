@@ -1,8 +1,8 @@
 from django.urls import path, include
-from apps.bookmodule import views
+from . import views
 
-urlpatterns = [
-    path('', views.index,name='index'),
-    path('books', views.books),
-    path('book/<int:bId>', views.book),
+urlpatterns = [   # path('' , THE FUNCTION TO BE SEND TO, NAME = TAMPLETNAME)
+    path('', views.index, name='index'),  # Homepage --> index.html
+    path('books/', views.books, name='books_list'),  # BookList --> booklist.html
+    path('book/<int:bId>/', views.book, name='book_detail'), #BookDetails --> book.html
 ]

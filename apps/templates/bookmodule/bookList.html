@@ -1,5 +1,7 @@
-<h1>Book List</h1>
+{% extends "layouts/base.html" %}
 
+{% block content %}
+<h1>Book List</h1>
 <h3>Book 1</h3>
 <h4>Title:</h4>
 <a href="/book/12344321">Continuous Delivery</a>
@@ -17,3 +19,4 @@
 <p>E. Eilam</p>
 <h4>Description:</h4>
 <p>This book provides in-depth practical techniques and methods for reverse engineering.</p>
+{% endblock content %}
